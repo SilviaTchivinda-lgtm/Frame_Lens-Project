@@ -5,21 +5,13 @@ The idea for this project is to enhance patient service and expand its product o
 
 # Dataset 
 
-The data contains 150 sales records with information including:
+The data contains 150 glasses records with information including:
 
-- Product ID
-- Product name
-- Brand 
-- Price
-- Frame colour 
-- Frame shape 
-- Frame material 
-- Gender
-- Availability
-- Product url
-- Page number
-- Source website
-- Data type
+* Product
+* Material
+* Availability
+* Gender
+* color
 
 ## Tools Used
 
@@ -37,33 +29,49 @@ The data contains 150 sales records with information including:
 ## Database Tables 
 
 The data was organised into the following tables:
-* Costumers
-* Products
-* Orders
-* Order_items
-* Deliveries
+ Product ID
+- Product name
+- Brand 
+- Price
+- Frame colour 
+- Frame shape 
+- Frame material 
+- Gender
+- Availability
+- Product url
+- Page number
+- Source website
+- Data type
 
-## Analysis 
+## Setup Instructions:
 
-The Project includes calculation for 
-* Total revenue
-* Total number of order
-* Revenue by product
-* Revenue by sales channel
-* Delivery performance
+1. Go to https://www.glasses.com
 
-## Project Objectives 
+2. Open a new repository on your GitHub account and name as the project 
 
-The main objectives are to:
+3. Click on it and copy the link by clicking on the two squares (under the “HTTPS”). 
 
-1. Tack Business Sales:
-   * Customer Purchasing Behavior
-   * Product Performance
-   * Revenue and order fulfilment
+4. Open your command prompt, write git clone and then paste the link collected from GitHub code   
 
-2. Organise the data:
-   * Store the sales data in PostgreSQL
-   * Organise the data into structured tables
-   * Maintain the original dataset
-   * Calculate important sales metrics
-   * Use SQL queries to support business analysis
+5.  Command prompt: cd + (name of the project folder) => enter=> and then write  code .  
+
+6. Open the terminal-gitbash-git status ls la 
+
+7. Now create a different branch under the main branch: on the terminal write 
+
+* Git checkout -b quotes_scrapper- to switch account 
+  
+* Create a new file called – extract.py or you can write on the terminal – touch extract.py 
+
+* Beggin the set up: write inside the extract.py URL = "https://www.glasses.com/"
+
+* On the terminal write – python -m venv venv to create a new file
+
+* Under the venv folder create git ignore file by clicking on the folder first and then name it - .gitignore 
+
+* Inside gitignore write the name of the folder created (venv) 
+
+* Activate the environment by writing on the terminal - source venv/Scripts/activate 
+
+* Start installing the libraries by writing on the terminal- pip install requests pandas selenium Beautifulsoup4, Urllib3 
+  
